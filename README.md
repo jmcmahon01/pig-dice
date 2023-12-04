@@ -6,14 +6,18 @@ Code: const roll = new Dice()
 Output: Any number from 1 to 6
 
 Test: "Function should add cumulative total of rolls each time it is called"
-code:        const roll = new Dice ();
-             roll.rollDice();
-Output:      > roll; 
-             > 3
-             roll.rollDice();
-             > 5
-             roll;
-             > 8
+code: const roll = new Dice ();
+      roll.rollDice();
+Output: > roll; 
+        > 3
+        roll.rollDice();
+        > 5
+        roll;
+        > 8
+
+Test: "If a 1 is rolled, cumulative total will equal zero"
+code: rollDice(1); 
+Output: 0
 
 Describe: getTotal();
 Test: "should return total sum of all previous roll values"
