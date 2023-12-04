@@ -15,9 +15,13 @@ Output: > roll;
         roll;
         > 8
 
-Test: "If a 1 is rolled, cumulative total will equal zero"
+Test: "If a 1 is rolled, cumulative total will equal zero and return 'you rolled a 1, no points for you!'"
 code: rollDice(1); 
-Output: 0
+Output: 'you rolled a 1, no points for you!'
+
+Test: "If total points is greater than or equal to 10, return 'you win the game'"
+code: roll; 
+      >10: 'You win the game!'
 
 Describe: getTotal();
 Test: "should return total sum of all previous roll values"
