@@ -15,3 +15,10 @@ Output:      > roll;
              roll;
              > 8
 
+Describe: getTotal();
+Test: "should return total sum of all previous roll values"
+code: const roll = new Dice(); 
+      first roll = 3
+      second roll = 5
+      roll.getTotal();
+Output: 8

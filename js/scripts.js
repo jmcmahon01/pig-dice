@@ -6,3 +6,8 @@ Dice.prototype.rollDice = function () {
   this.total += result;
   return result;
 };
+
+Dice.prototype.getTotal = function() {
+  return this.total;
+};
+
